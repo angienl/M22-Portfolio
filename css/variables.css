@@ -1,0 +1,35 @@
+/*typography*/
+/*type scale */
+/*color*/
+/*header styles */
+h1 {
+  font-size: 2.0736rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.728rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Nunito, sans-serif;
+  color: #32383D;
+  background-color: #f0fef9;
+  padding: 0 16px;
+}
+
+.alt-color {
+  color: #5aa682;
+}/*# sourceMappingURL=variables.css.map */

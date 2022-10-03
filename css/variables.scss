@@ -1,0 +1,59 @@
+/*typography*/
+$font-primary: Nunito, sans-serif; 
+$text-base-size: 1rem;
+$text-scale-ratio: 1.2;
+
+/*type scale */
+$text-xs: calc(1rem / $text-scale-ratio * $text-scale-ratio);
+$text-sm: calc(1rem / $text-scale-ratio);
+$text-md: calc(1rem * $text-scale-ratio);
+$text-lg: calc(1rem * $text-scale-ratio * $text-scale-ratio);
+$text-xl: calc(1rem * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+$text-xxl: calc(1rem * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+$text-xxxl: calc(1rem * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+
+/*color*/
+$MG1: #f0fef9;
+$MG2: #dffff1;
+$MG3: #c5eddf;
+$MG4: #5aa682;
+$MG5: #2e6a4e;
+
+$DC1: #32383D;
+$DC2: #47544e;
+$DC3: #77847e;
+$DC4: #b8c0bd;
+$DC5: #FCFFFE;
+
+/*header styles */
+h1 {
+    font-size: $text-xxl;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: $text-xl;
+    font-weight: 800;
+}
+
+h3  {
+    font-size: $text-lg;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: $text-md;
+    font-weight: 600;
+}
+
+body {
+    font-size: $text-base-size; 
+    font-family: $font-primary; 
+    color: $DC1; 
+    background-color: $MG1;
+    padding: 0 16px;
+}
+
+.alt-color {
+    color: $MG4;
+}

@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/*typography*/
+/*type scale */
+/*color*/
+/*header styles */
+h1 {
+  font-size: 2.0736rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.728rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Nunito, sans-serif;
+  color: #32383D;
+  background-color: #f0fef9;
+  padding: 0 16px;
+}
+
+.alt-color {
+  color: #5aa682;
+}
+
+/*navbar https://codepen.io/munjewar/pen/jQrNWw*/ /*typography*/
+/*type scale */
+/*color*/
+/*header styles */
+h1 {
+  font-size: 2.0736rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.728rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Nunito, sans-serif;
+  color: #32383D;
+  background-color: #f0fef9;
+  padding: 0 16px;
+}
+
+.alt-color {
+  color: #5aa682;
+}
+
+.navigation {
+  height: 55px;
+  background: #f0fef9;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 55px;
+  font-size: 1.4em;
+}
+
+.brand a, .brand a:visited {
+  color: #32383D;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a, nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 55px;
+  color: #32383D;
+  background: #f0fef9;
+  text-decoration: none;
+}
+
+nav ul li a {
+  background: transparent;
+  color: #32383D;
+}
+
+nav ul li a:hover, nav ul li a:visited:hover {
+  background: #5aa682;
+  color: #FCFFFE;
+}
+
+.navbar-dropdown li a {
+  background: #5aa682;
+}
+
+nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+
+nav ul li ul li {
+  min-width: 190px;
+}
+
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background: #FCFFFE;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  color: #32383D;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+  width: 70px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: #FCFFFE;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#navbar-toggle span:before {
+  top: -10px;
+}
+
+#navbar-toggle span:after {
+  bottom: -10px;
+}
+
+#navbar-toggle.active span {
+  background-color: transparent;
+}
+
+#navbar-toggle.active span:before, #navbar-toggle.active span:after {
+  top: 0;
+}
+
+#navbar-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#navbar-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/*end of navbar*/
+/*cards*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #FCFFFE;
+  padding: 10px 30px;
+  display: flex;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  background: #5aa682;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #c5eddf;
+  color: #32383D;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #c5eddf;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1.5rem;
+  background: #c5eddf;
+}
+
+.card_title {
+  color: #32383D;
+  text-align: center;
+  margin: 40px auto 3px auto;
+}
+
+.card_text {
+  color: #32383D;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/*end grid*/
+/*footer */
+footer {
+  position: fixed;
+  background: #5aa682;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer .footer-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .logo-details {
+  color: #FCFFFE;
+  font-size: 2rem;
+}
+
+.footer-content .media-icons {
+  display: flex;
+  color: #FCFFFE;
+  justify-content: center;
+}
+
+.footer-content .media-icons a {
+  margin: 0 8px;
+  text-align: center;
+  line-height: 40px;
+  color: #FCFFFE;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+/*media queries */ /*typography*/
+/*type scale */
+/*color*/
+/*header styles */
+h1 {
+  font-size: 2.0736rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.728rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Nunito, sans-serif;
+  color: #32383D;
+  background-color: #f0fef9;
+  padding: 0 16px;
+}
+
+.alt-color {
+  color: #5aa682;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 55px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+    background: #5aa682;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .navbar-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+@media (min-width: 480px) {
+  .cards_item {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */

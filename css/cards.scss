@@ -1,0 +1,74 @@
+/*cards*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: $DC5;
+  padding: 10px 30px;
+  display: flex;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  background: $MG4; 
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: $MG3;
+  color: $DC1;
+}
+
+.cards {
+  display: flex; 
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: $MG3;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1.5rem;
+  background: $MG3;
+}
+
+.card_title {
+  color: $DC1;
+  text-align: center;
+  margin: 40px auto 3px auto;
+}
+
+.card_text {
+  color: $DC1;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+}
+
+/*end grid*/
